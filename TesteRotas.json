@@ -1,0 +1,216 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "TesteRotas",
+    "dateExported": "2023-03-23T00:32:29.167Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0f9a5cd9-0225-49a6-ae40-e310653a5110",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/pergunta/1",
+            "url": "localhost:3000/pergunta/1",
+            "method": "DELETE",
+            "sortNum": 10000,
+            "created": "2023-03-23T00:30:56.225Z",
+            "modified": "2023-03-23T00:30:56.225Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7aa5e2f5-ca44-4b0e-aa20-5e3c336d0729",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/pergunta/1/caio@gmail.com/comovcesta",
+            "url": "localhost:3000/pergunta/1/caio@gmail.com/comovcesta",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-03-23T00:31:01.911Z",
+            "modified": "2023-03-23T00:31:01.911Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d9314fa7-36df-414a-9786-e4cc2e5b7f9a",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/pergunta?codPergunta=1&emailUsuario=caio@gmail.com&descricao=comovcesta",
+            "url": "localhost:3000/pergunta?codPergunta=1&emailUsuario=caio@gmail.com&descricao=comovcesta",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-23T00:31:05.895Z",
+            "modified": "2023-03-23T00:31:05.895Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "codPergunta",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "emailUsuario",
+                    "value": "caio@gmail.com",
+                    "isPath": false
+                },
+                {
+                    "name": "descricao",
+                    "value": "comovcesta",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3163119b-8e3f-4513-9e68-197d8ac717ed",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/pergunta",
+            "url": "localhost:3000/pergunta",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-03-23T00:31:10.224Z",
+            "modified": "2023-03-23T00:31:10.224Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d16f313a-0a1c-4c45-bd01-115931b2f66d",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/resposta/1",
+            "url": "localhost:3000/resposta/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-03-23T00:31:16.183Z",
+            "modified": "2023-03-23T00:31:16.183Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "49c5606b-ff21-4e1e-a246-4322be20ad39",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/resposta/1/comovcesta",
+            "url": "localhost:3000/resposta/1/comovcesta",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-03-23T00:31:21.543Z",
+            "modified": "2023-03-23T00:31:21.543Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "32efe48d-7511-46d3-b510-883affd59d29",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/resposta?codPergunta=1&resposta=já lançou minha nota 20?",
+            "url": "localhost:3000/resposta?codPergunta=1&resposta=comovcesta",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-03-23T00:31:26.079Z",
+            "modified": "2023-03-23T00:31:26.079Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "codPergunta",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "resposta",
+                    "value": "comovcesta",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "8035b636-3a50-41a4-b159-0246c8ef0997",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/resposta",
+            "url": "localhost:3000/resposta",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-03-23T00:31:29.759Z",
+            "modified": "2023-03-23T00:31:29.759Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1aee4090-4970-4ed2-a624-2a1d0a61899f",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/usuario/caio",
+            "url": "localhost:3000/usuario/ok",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-03-23T00:31:33.591Z",
+            "modified": "2023-03-23T00:31:33.591Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9fad55d1-2d6a-4a0d-bc9b-80a7a34f6918",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/usuario",
+            "url": "localhost:3000/usuario",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-03-23T00:31:40.495Z",
+            "modified": "2023-03-23T00:31:40.495Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ff2474cb-1405-4a98-8c9d-1cb7501fb559",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/usuario?name=caio",
+            "url": "localhost:3000/usuario/caio/caio@gmail.com",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-03-23T00:31:50.391Z",
+            "modified": "2023-03-23T00:31:50.391Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6d140655-b265-4dd0-b850-50625cc8e928",
+            "colId": "ce780215-ee7f-41f5-a4a8-3999920f4ee1",
+            "containerId": "",
+            "name": "localhost:3000/usuario?name=caio&email=caio@gmail.com",
+            "url": "localhost:3000/usuario?name=caio&email=caio@gmail.com",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-03-23T00:31:55.872Z",
+            "modified": "2023-03-23T00:31:55.872Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "caio",
+                    "isPath": false
+                },
+                {
+                    "name": "email",
+                    "value": "caio@gmail.com",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ],
+    "settings": {}
+}

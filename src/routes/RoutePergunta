@@ -1,0 +1,49 @@
+const express = require('express')
+const router = express.Router()
+
+let pergunta = []
+pergunta.push({codPergunta: 5, emailUsuario: "lidia@iftm.edu.br", descricao: "O que é uma aplicação Restful?"})
+pergunta.push({codPergunta: 4, emailUsuario: "lidia@iftm.edu.br", descricao: "Quais são as operações (métodos HTTP) Rest para um CRUD?"})
+
+router.get('/', (req, res) => {
+    if (pergunta.length > 0) {
+        console.log(pergunta)
+        res.json(pergunta)
+    } else {
+        console.log("Não há registros.")
+        res.send("Não há registros.")
+    }
+})
+
+router.post('/', (req, res,next) => {
+    pergunta.push({codPergunta: req.query.codPergunta, emailUsuario: req.query.emailUsuario, descricao: req.query.descricao})
+    console.log(req.query.codPergunta)
+    console.log(req.query.emailUsuario)
+    console.log(req.query.descricao)
+    res.json(pergunta[pergunta.length-1])
+})
+
+router.put('/:codPergunta/:emailUsuario/:descricao', (req, res) => {
+    console.log(req.params.codPergunta + " " + req.params.emailUsuario + " " + req.params.descricao + ": Funcionalidade em construção.")
+    res.send(req.params.codPergunta + " " + req.params.emailUsuario + " " + req.params.descricao + ": Funcionalidade em construção.")
+})
+
+router.delete('/:codPergunta', (req, res) => {
+    let aux = '{"codPergunta" : ""}'
+    if (pergunta.length > 0) {
+        for (let u of pergunta) {
+            if (u.codPergunta == req.params.codPergunta) {
+                aux = u
+            }
+        }
+    }
+    if (aux.codPergunta == req.params.codPergunta) {
+        console.log(aux)
+        res.json(aux)
+    } else {
+        console.log("pergunta não encontrada!")
+        res.send("pergunta não encontrada!")
+    }
+})
+
+module.exports = router

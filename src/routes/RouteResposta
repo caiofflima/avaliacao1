@@ -1,0 +1,48 @@
+const express = require('express')
+const router = express.Router()
+
+let resposta = []
+resposta.push({codPergunta: 5, resposta: "É um padrão de arquitetura de software que busca padronizar os modelos de requisições HTTP, para facilitar o uso de APIs de diversas fontes"})
+resposta.push({codPergunta: 4, resposta: "GET: Busca/Requisição, PUT: Atualização, POST: Inserção, REMOVE: Remoção"})
+
+router.get('/', (req, res) => {
+    if (resposta.length > 0) {
+        console.log(resposta)
+        res.json(resposta)
+    } else {
+        console.log("Não há registros.")
+        res.send("Não há registros.")
+    }
+})
+
+router.post('/', (req, res,next) => {
+    resposta.push({codPergunta: req.query.codPergunta, resposta: req.query.resposta})
+    console.log(req.query.codPergunta)
+    console.log(req.query.resposta)
+    res.json(resposta[resposta.length-1])
+})
+
+router.put('/:codPergunta/:resposta', (req, res) => {
+    console.log(req.params.codPergunta + " " + req.params.resposta + ": Funcionalidade em construção.")
+    res.send(req.params.codPergunta + " " + req.params.resposta + ": Funcionalidade em construção.")
+})
+
+router.delete('/:codPergunta', (req, res) => {
+    let aux = '{"codPergunta" : ""}'
+    if (resposta.length > 0) {
+        for (let u of resposta) {
+            if (u.codPergunta == req.params.codPergunta) {
+                aux = u
+            }
+        }
+    }
+    if (aux.codPergunta == req.params.codPergunta) {
+        console.log(aux)
+        res.json(aux)
+    } else {
+        console.log("resposta não encontrada!")
+        res.send("resposta não encontrada!")
+    }
+})
+
+module.exports = router
